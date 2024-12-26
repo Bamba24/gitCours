@@ -1,0 +1,75 @@
+✅ Qu'est ce qu'un terminal ?
+
+Un terminal est une application permettant de dialoguer avec son ordinateur via l’écriture de lignes de commande.Le terminal est une interface entre vous et votre ordinateur. Son but premier est de vous permettre de communiquer avec lui grâce à des commandes. 
+
+✅ Mais que permet un terminal ?
+Eh bien, entre autres choses, le terminal sert à :
+
+    naviguer dans une arborescence de fichiers ;
+
+    créer, supprimer et déplacer des dossiers et des fichiers ;
+
+    lancer des programmes.
+
+« Console », « terminal », « ligne de commande », « term », tous ces mots sont des synonymes pour désigner la même chose. Dans la suite du cours, l'un ou l'autre de ces termes seront utilisés indifféremment.
+
+✅ Les paramètres modifient le comportement d'une commande, en lui apportant des précisions, comme des noms de dossiers ou des options.
+
+✅ Commande possède ses propres arguments.
+
+Que signifie la commande pwd (print working directory) 
+
+Afficher le repertoire de travail
+✅ Explorez le contenu d’un dossier avec « ls = list » permet de lister le contenu d'un répertoire.
+
+ls -a =>  Affiche tout les dossiers et fichier caché ou pas .
+ls . => Affiche tout le contenu du dossier courant.
+ls 2019 => Affiche dans le dossier courant, le contenu du dossier selectionné.
+ls .. => Remonte vers le dossier parent .
+
+ls -l => donne plus d'information sur le type, la date.
+ls -l -a => ls -la donne plus d'information sur le type, la date et les documents caché.
+
+✅ la commande « cd », pour « Change Directory » (« changer de répertoire », en français) vous permettra de naviguer d'un répertoire à l'autre.
+
+cd Documents => passe du dossier courant au dossier  selectionné
+cd .. => remonte d'un dossier (dossier parent)
+cd  Documents/vite-project => permet de separer le chemin par des slash
+
+✅ mkdir est la contraction de “make directory”, c’est-à-dire “Créer un répertoire”, en français.
+mkdir 'vite project'
+
+✅ pour créer un fichier appelé fichier.txt, il suffira de taper : touch fichier.txt
+touch 'vite project.txt'
+
+
+✅ deplacer, supprimer et et copier ?
+
+la regle est simple: la commande a deux parametre le fichier a envoyer et la destination
+
+mv: move => mv bonjour.txt repertoire/  // supprime le fichier du repoertoire
+mv: move => mv bonjour.txt salut.txt // celle ci remplace 
+mv: move => mv dossier/fichier.txt . // celle ci refait l'operation a l'inverse mais faudra se placer dans le repertoire concerné
+
+cp: copy => cp bonjour.txt repertoire/  // copie le fichier et le met dans le repertoire destiné 
+cp: copy => cp bonjour.txt salut.txt /  // copie le fichier et change juste le nom  dans le repertoire courant
+cp: copy => cp -r repertoire/ repertoire2 // copie le repertoire dans un autre repertoire2 grace a -r
+
+rm: remove => rm bonjour.txt    // supprimer un fichier
+rm: remove => rm -r repertoire/  // supprimer un dossier
+
+✅ Affichez le manuel d’une commande avec man
+man suivi de la commande (ls) et q pour quitter
+
+
+✅ Découvrez les redirections
+ls -l dossier => ls -l > list.txt // redirige le resultat sur le fichier list.txt
+cat list.txt => pour consulter le contenu
+less list.txt =>
+more list.txt => 
+
+✅ Utilisez cat, less et more pour connaître le contenu d’un fichier
+grep bonjour list.txt => permet de faire la recherche de "bonjour" sur le fichier list.txt
+grep txt * => permet de faire une recherche dans le dossier courant tout les fichiers lui ressenblant
+
+✅ * : est un caractère qui peut être utilisé comme substitut pour n’importe quel caractère dans une recherche  

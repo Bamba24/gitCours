@@ -1,0 +1,119 @@
+✅ Quelle est la difference entre git et github ?
+
+github est site qui stocke votre code tandis que git est un outil qui vous aide a sauvegarder differente version de votre code en utilisant ce que l'on appelle le controle de version. elle permet de suivre la modification du code.
+
+✅ Git et GitHub sont deux choses différentes.
+
+ Git est un gestionnaire de versions. Vous l’utiliserez pour créer un dépôt local et gérer les versions de vos fichiers.
+
+ GitHub est un service en ligne qui va héberger votre dépôt. Dans ce cas, on parle de dépôt distant puisqu’il n’est pas stocké sur votre machine.
+
+✅ Un gestionnaire de versions est un programme qui permet aux développeurs de conserver un historique des modifications et des versions de tous leurs fichiers.
+
+L’action de contrôler les versions est aussi appelée "versioning" en anglais, vous pourrez entendre les deux termes.
+
+✅ Le gestionnaire de versions permet de garder en mémoire :
+chaque modification de chaque fichier ;
+pourquoi elle a eu lieu ;
+et par qui ! 
+
+✅ Cet outil a donc trois grandes fonctionnalités :
+
+    Revenir à une version précédente de votre code en cas de problème.
+
+    Suivre l’évolution de votre code étape par étape.
+
+    Travailler à plusieurs sans risquer de supprimer les modifications des autres collaborateurs.
+
+✅ Avec Git, l’historique complet du code n’est pas conservé dans un unique emplacement. Chaque copie du code effectué correspond à un nouveau dépôt dans lequel est conservé l’historique des modifications.
+
+
+    Un dépôt est comme un dossier qui conserve un historique des versions et des modifications d’un projet. Il est essentiel pour travailler en équipe ou collaborer à un projet open source.
+
+    Un dépôt local est l’endroit où l’on stocke, sur sa machine, une copie d’un projet, ses différentes versions et l’historique des modifications.
+
+    Un dépôt distant est une version dématérialisée du dépôt local, que ce soit sur Internet ou sur un réseau. Il permet de centraliser le travail des développeurs dans un projet collectif.
+
+    Il existe plusieurs services en ligne pour héberger un dépôt distant, GitHub étant l’un des plus populaires.
+
+✅ L'interface repository
+
+L’interface Repositories est l’emplacement où vous pourrez créer et retrouver vos dépôts existants.
+
+✅  Votre profil
+
+Sur votre profil, vous pourrez éditer vos informations, mais aussi voir le total de vos contributions sur les différents projets.
+
+
+ ✅ L’onglet Pull requests, quant à lui, permet de faire des demandes de modifications réalisées sur le code.
+
+Ah bon, comment ça marche ?
+
+Les pull requests (ou demandes de pull), vous permettent d'informer les autres utilisateurs des modifications que vous avez appliquées à une branche d'un repository sur GitHub, et que vous voulez fusionner avec le code principal.
+
+
+✅ Via Explore, vous pourrez trouver de nouveaux projets open source sur lesquels travailler, en parcourant les projets recommandés, en vous connectant à la communauté GitHub et en recherchant des repositories par sujet ou par libellé.
+
+Pour mettre votre projet sur GitHub, vous devez créer un repository (ou dépôt en français) dans lequel il pourra être installé.
+
+
+✅ README est un fichier qui indique les informations clés de votre projet : description, environnement à utiliser, dépendances possibles et droits d’auteurs. C’est un peu comme le mode d’emploi de votre projet.
+
+✅ gitignore est un fichier qui permet d’ignorer certains fichiers de votre projet Git.
+
+
+✅ Comment initialiser un depot git ?
+
+  Configurez votre identité avec les commande suivante : 
+  grâce à l’option --global, vous n’aurez besoin de le faire qu'une fois.
+
+  $ git config --global user.name "John Doe"
+  $ git config --global user.email johndoe@example.com
+
+  Si vous souhaitez, pour un projet spécifique, changer votre nom d’utilisateur, vous devrez repasser cette ligne mais sans le --global.
+
+  Pour vérifier que vos paramètres ont bien été pris en compte, et vérifier les autres paramètres, il suffit de passer la commande  git config --list.
+
+
+ ✅ configuer les couleurs 
+  $ git config --global color.diff auto 
+  $ git config--global color.status auto
+  $ git config --global color.branch auto
+
+
+✅ les deux méthodes pour créez ou initialiser un dépôt local
+
+    Maintenant que vous avez configuré les paramètres de base, vous pouvez créer votre fameux dépôt local. Pour ce faire, deux solutions sont possibles :
+
+    créer un dépôt local vide pour accueillir un nouveau projet : la procédure est expliquée ci-dessous ;
+
+    cloner un dépôt distant, c’est-à-dire rapatrier l’historique d’un dépôt distant en local. Nous aborderons cette méthode dans la deuxième partie du cours
+
+
+
+✅ Le Working directory
+
+Cette zone correspond au dossier du projet sur votre ordinateur.
+
+Souvenez-vous, dans la partie précédente nous avons initialisé le dépôt “PremierProjet”. Eh bien ce dépôt, c’est la zone bleue du schéma.
+
+✅ Le Stage ou index
+Cette zone est un intermédiaire entre le working directory et le repository. Elle représente tous les fichiers modifiés que vous souhaitez voir apparaître dans votre prochaine version de code.
+
+✅ Le Repository
+Lorsque l’on crée de nouvelles versions d’un projet (vous vous souvenez, les 3 versions différentes du gâteau ?), c’est dans cette zone qu’elles sont stockées.
+
+
+✅ passage de working directory vers stage ou index:
+git add index.html
+
+✅ passage de stage ou index vers repository (depot local):
+git commit index.html
+git commit *
+
+✅ passage du repository vers gitHub:
+git push index.html
+git push *
+
+✅ consulter le status des fichiers
+git status index.html ou git status *
