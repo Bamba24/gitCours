@@ -111,9 +111,13 @@ git add index.html
 git commit index.html
 git commit *
 
-✅ passage du repository vers gitHub:
+✅ passage du repository vers gitHub (depot distant):
 git push index.html
 git push *
 
 ✅ consulter le status des fichiers
 git status index.html ou git status *
+
+✅ SSH VS HTTPS
+Il existe deux protocoles : SSH et HTTPS. Lorsque vous souhaitez envoyer du code sur GitHub, vous pouvez utiliser HTTPS : on vous demandera une confirmation de votre identifiant et mot de passe pour chaque action sensible. Vous pouvez aussi opter pour le protocole SSH, qui fonctionne via un système de clés privées et publiques.
+
