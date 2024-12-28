@@ -121,3 +121,10 @@ git status index.html ou git status *
 ✅ SSH VS HTTPS
 Il existe deux protocoles : SSH et HTTPS. Lorsque vous souhaitez envoyer du code sur GitHub, vous pouvez utiliser HTTPS : on vous demandera une confirmation de votre identifiant et mot de passe pour chaque action sensible. Vous pouvez aussi opter pour le protocole SSH, qui fonctionne via un système de clés privées et publiques.
 
+✅ Etape 1: ssh-keygen -t rsa -b 4096 -C "votre_email@example.com"
+-t rsa : spécifie le type de clé (ici RSA).
+-b 4096 : définit la longueur de la clé (4096 bits est recommandé pour une sécurité accrue).
+-C "votre_email@example.com" : ajoute un commentaire (généralement votre adresse e-mail) pour identifier la clé.
+
+✅ Etape 2: Ajoutez la clé SSH à votre compte GitHub (ou autre service Git)
+cat ~/.ssh/id_rsa.pub
