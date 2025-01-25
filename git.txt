@@ -120,6 +120,9 @@ git status index.html ou git status *
 
 ✅ Revenir en arriere 
 
+git branch pour consulter les les branches 
+git branch tester  pour creer un nouveau branche 
+git checkout main  permet de basculer vers la branche  main
 
 
 ✅ cloner un depot distant ou projet
