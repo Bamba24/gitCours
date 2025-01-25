@@ -119,10 +119,15 @@ git push *
 git status index.html ou git status *
 
 ✅ Revenir en arriere 
-
 git branch pour consulter les les branches 
 git branch tester  pour creer un nouveau branche 
 git checkout main  permet de basculer vers la branche  main
+
+✅ Renommer une branche
+git branch -m tester master2
+
+✅ Supprimer une branche 
+git branch -d tester
 
 
 ✅ cloner un depot distant ou projet
