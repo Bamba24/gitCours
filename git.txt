@@ -108,7 +108,7 @@ Lorsque l’on crée de nouvelles versions d’un projet (vous vous souvenez, le
 git add index.html
 
 ✅ passage de stage ou index vers repository (depot local):
-git commit index.html
+git commit index.html garde l'historique des changements
 git commit *
 
 ✅ passage du repository vers gitHub (depot distant):
@@ -117,6 +117,14 @@ git push *
 
 ✅ consulter le status des fichiers
 git status index.html ou git status *
+
+✅ Revenir en arriere 
+
+
+
+✅ cloner un depot distant ou projet
+git clone https://github.com/Bamba24/SITE-DE-DAKAR.git projetDakar (permet de renomer le projet (dossier))
+
 
 ✅ SSH VS HTTPS
 Il existe deux protocoles : SSH et HTTPS. Lorsque vous souhaitez envoyer du code sur GitHub, vous pouvez utiliser HTTPS : on vous demandera une confirmation de votre identifiant et mot de passe pour chaque action sensible. Vous pouvez aussi opter pour le protocole SSH, qui fonctionne via un système de clés privées et publiques.
