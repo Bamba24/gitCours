@@ -1,1 +1,20 @@
-.txt
+# Node.js
+node_modules/
+npm-debug.log
+
+# Dossiers de build
+dist/
+build/
+
+# Fichiers temporaires
+*.log
+*.tmp
+git.txt
+
+# Fichiers de configuration IDE
+.vscode/
+.idea/
+
+# Ignorer tous les fichiers .env sauf .env.production
+*.env
+!.env.production

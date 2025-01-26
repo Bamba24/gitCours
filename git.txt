@@ -119,6 +119,36 @@ git push *
 git status index.html ou git status *
 
 ✅ Revenir en arriere 
+git branch pour consulter les les branches 
+git branch tester  pour creer un nouveau branche 
+git checkout main  permet de basculer vers la branche  main
+
+✅ Renommer une branche
+git branch -m tester master2
+
+✅ Supprimer une branche 
+git branch -d tester
+
+✅ lier un depot distant et un depot local 
+git remote add origin https://github.com/Bamba24/Bamba24.git
+git branch -M main
+git push -u origin main
+
+✅ Passer de ssh a https 
+git remote -v
+git remote set-url origin https://github.com/ton-utilisateur/ton-depot.git
+git remote add origin https://github.com/Bamba24/Bamba24.git
+git branch -M main
+git push -u origin main
+
+✅ recuperer des modification faite dans le depot distant
+git pull
+
+✅ recuperer des modification faite dans le depot distant d'une branche differente
+deplacement dans le branche concerné (tester)
+git pull origin main
+puis publier la branch qui n'existe pas
+git push --setupstream origin main
 
 
 
