@@ -141,6 +141,15 @@ git remote add origin https://github.com/Bamba24/Bamba24.git
 git branch -M main
 git push -u origin main
 
+✅ recuperer des modification faite dans le depot distant
+git pull
+
+✅ recuperer des modification faite dans le depot distant d'une branche differente
+deplacement dans le branche concerné (tester)
+git pull origin main
+puis publier la branch qui n'existe pas
+git push --setupstream origin main
+
 
 
 ✅ cloner un depot distant ou projet
